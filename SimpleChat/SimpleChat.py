@@ -12,7 +12,7 @@ prompts = {
 responses = {
     "what":  "A video game is an electronic game that involves interaction with a user interface to generate visual feedback on a two- or three-dimensional video display device such as a TV screen, virtual reality headset or computer monitor.",
     "use": "video games are used for entertainment purpouses.",
-    "companies": "Xbox, PlayStation, and Ninteno are the three major companies that make video games.",
+    "who": "Xbox, PlayStation, and Ninteno are the three major companies that make video games.",
     "long": "the earliest video gamea Cathode ray tube Amusement Device was filed for a patent on 25 January 1947, by Thomas T. Goldsmith Jr. and Estle Ray Mann, and issued on 14 December 1948, as U.S. Patent 2455992."
 
 }
@@ -34,7 +34,7 @@ def processInput(userInput):
     elif len(matchingKeys) == 1:
         return responses[matchingKeys[0]]
     else:
-        print("I am not sure what you mean. Dis you mean: ")
+        print("I am not sure what you mean. Did you mean: ")
         index = 1
 
         for key in matchingKeys:
